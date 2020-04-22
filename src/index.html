@@ -8,26 +8,41 @@
 <body>
   <div>
     <div id="visor" class="visor"></div>
-    <button id="1" onclick="onClick(id)" class="ball number">1</button>
-    <button id="2" onclick="onClick(id)" class="ball number">2</button>
-    <button id="3" onclick="onClick(id)" class="ball number">3</button>
-    <button id="4" onclick="onClick(id)" class="ball number">4</button>
-    <button id="5" onclick="onClick(id)" class="ball number">5</button>
-    <button id="6" onclick="onClick(id)" class="ball number">6</button>
-    <button id="7" onclick="onClick(id)" class="ball number">7</button>
-    <button id="8" onclick="onClick(id)" class="ball number">8</button>
-    <button id="9" onclick="onClick(id)" class="ball number">9</button>
-    <button id="0" onclick="onClick(id)" class="ball number">0</button>
-
-    <button id="+" onclick="onClick(id)" class="ball symbol">+</button>
-    <button id="-" onclick="onClick(id)" class="ball symbol">-</button>
-    <button id="+" onclick="onClick(id)" class="ball symbol">*</button>
-    <button id="-" onclick="onClick(id)" class="ball symbol">/</button>
-    <button id="**" onclick="onClick(id)" class="ball symbol">^2</button>
-    <button id="." onclick="onClick(id)" class="ball symbol">.</button>
-
-    <button id="=" onclick="equalSym()" class="ball equal">=</button>
-    <button id="clear" onclick="clearVisor()" class="ball clear">C</button>
+    <div class="numbers">
+      <div class="firstRow">
+        <button id="clear" onclick="clearVisor()" class="ball ball3 clear">C</button>
+        <button id="convert" onclick="clearVisor()" class="ball clear">+/-</button>
+        <button id="percentage" onclick="clearVisor()" class="ball clear">%</button>
+        <button id="0" onclick="onClick(id)" class="ball ball2 number">0</button>
+      </div>
+      <div class="secondRow">
+        <button id="1" onclick="onClick(id)" class="ball number">1</button>
+        <button id="2" onclick="onClick(id)" class="ball ball3 number">2</button>
+        <button id="3" onclick="onClick(id)" class="ball ball4 number">3</button>
+        <button id="4" onclick="onClick(id)" class="ball number">4</button>
+      </div>  
+      <div>
+        <button id="5" onclick="onClick(id)" class="ball ball3 number">5</button>
+        <button id="=" onclick="equalSym()" class="ball ball2 equal">=</button>
+        <button id="6" onclick="onClick(id)" class="ball ball3 number">6</button>
+        <button id="**" onclick="onClick(id)" class="ball ball4 symbol">^2</button>
+      </div>
+      <div class="thirdRow">
+        <button id="7" onclick="onClick(id)" class="ball number">7</button>
+        <button id="-" onclick="onClick(id)" class="ball ball3  symbol">-</button>
+        <button id="8" onclick="onClick(id)" class="ball number">8</button>
+        <button id="9" onclick="onClick(id)" class="ball ball2 number">9</button>
+      </div>
+      <div>
+        <button id="+" onclick="onClick(id)" class="ball ball2 symbol">+</button>
+        <button id="." onclick="onClick(id)" class="ball symbol">.</button>
+        <button id="*" onclick="onClick(id)" class="ball ball2 symbol">*</button>
+        <button id="/" onclick="onClick(id)" class="ball symbol">/</button>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
   </div>
   <script src="main.js"></script>
 </body>
