@@ -11,9 +11,6 @@ const onClick = (id) => {
   visor.innerHTML = num;
 };
 
-
-
-
 const equalSym = () => {
   if (num !== '') {
     result = eval(num)
@@ -26,4 +23,13 @@ const clearVisor = () => {
   visor.innerHTML = '';
   num = '';
   result = '';
+}
+
+const convert = () => {
+  if (num[0] === '-') {
+    num = num.slice(1)
+  } else {
+    num = '-' + num;
+  }
+  visor.innerHTML = num
 }

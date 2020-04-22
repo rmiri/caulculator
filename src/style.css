@@ -3,26 +3,23 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .visor {
   max-width: 100%;
-  height: 50px;
-  background-color: wheat;
-  color: green;
+  background-color: #ebe8ea;
+  color: #2e2e2e;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+  border-radius: 20px;
 }
-.numbers {
-  width: 100vw;
-    /* margin-top: 5vh; */
-  /* margin-left: 15vw;
-  margin-right: 15vw; */
-  /* margin-bottom: 5vh; */
-}
+
 .ball {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  border-color: white;
   animation: bounce 0.5s;
   animation-direction: alternate;
   animation-timing-function: cubic-bezier(.5,0.05,1,.5);
@@ -50,16 +47,17 @@ body {
 }
 
 .number {
-  background-color: pink
+  background-color: #ffa41b
 }
 .symbol {
-  background-color: teal
+  background-color: #005082
 }
 .equal {
-  background-color: tomato;
+  background-color: #000839;
+  color: white;
 }
 .clear {
-  background-color: turquoise;
+  background-color: rgb(176, 103, 224);
 }
 
 @keyframes bounce {
@@ -79,4 +77,27 @@ ball {
 @-webkit-keyframes bounce {
   from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
   to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
+}
+
+
+
+.element {
+  width: 100%;
+  height: 100%;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #0779e4;
+  }
+  30% {
+    background-color: #4cbbb9
+  }
+  80% {
+    background-color: #77d8d8;
+  }
+  100% {
+    background-color: #0779e4;
+  }
 }

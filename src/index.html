@@ -5,14 +5,14 @@
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-  <div>
+<body class="element">
+  <div >
     <div id="visor" class="visor"></div>
     <div class="numbers">
       <div class="firstRow">
         <button id="clear" onclick="clearVisor()" class="ball ball3 clear">C</button>
-        <button id="convert" onclick="clearVisor()" class="ball clear">+/-</button>
-        <button id="percentage" onclick="clearVisor()" class="ball clear">%</button>
+        <button id="convert" onclick="convert()" class="ball clear">+/-</button>
+        <button id="/100" onclick="onClick(id)" class="ball clear">%</button>
         <button id="0" onclick="onClick(id)" class="ball ball2 number">0</button>
       </div>
       <div class="secondRow">
@@ -44,6 +44,7 @@
       <div>
       </div>
   </div>
+  
   <script src="main.js"></script>
 </body>
 </html>
