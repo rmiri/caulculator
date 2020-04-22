@@ -1,11 +1,29 @@
-'use strict';
+const visor = document.getElementById('visor')
 
-function counter() {
-  let seconds = 0;
-  setInterval(() => {
-    seconds += 1;
-    document.getElementById('app').innerHTML = `<p>You have been here for ${seconds} seconds.</p>`;
-  }, 1000);
+let num = '';
+
+let result;
+
+
+
+const onClick = (id) => {
+  num += id;
+  visor.innerHTML = num;
+};
+
+
+
+
+const equalSym = () => {
+  if (num !== '') {
+    result = eval(num)
+    num = result
+    visor.innerHTML = result
+  }
 }
 
-counter();
+const clearVisor = () => {
+  visor.innerHTML = '';
+  num = '';
+  result = '';
+}

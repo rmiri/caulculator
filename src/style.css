@@ -116,3 +116,8 @@ progress {
 [hidden] {
   display: none;
 }
+.visor{
+  border: 1px red solid;
+  height: 100px;
+  padding: 20px;
+}
